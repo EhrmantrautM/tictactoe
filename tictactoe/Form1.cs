@@ -53,12 +53,12 @@ namespace tictactoe
                     {
                         MessageBox.Show("O WON");
                         ywin++;
-                        Restart();  
+                        Restart();
                     }
                     else
                         MessageBox.Show("X WON");
-                        xwin++;
-                        Restart();
+                    xwin++;
+                    Restart();
                 }
             }
         }
@@ -108,7 +108,7 @@ namespace tictactoe
 
             if ((btna1.Text == btnb2.Text) && (btnb2.Text == btnc3.Text) && btna1.Text != "")
                 return true;
-            else if ((btnb1.Text == btnb2.Text) && (btnb2.Text == btnc2.Text) && btnb1.Text != "")
+            else if ((btnc1.Text == btnb2.Text) && (btnb2.Text == btna3.Text) && btnc1.Text != "")
                 return true;
             else
                 return false;

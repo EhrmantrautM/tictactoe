@@ -164,9 +164,9 @@
             this.drw.BackColor = System.Drawing.Color.Transparent;
             this.drw.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drw.ForeColor = System.Drawing.Color.Snow;
-            this.drw.Location = new System.Drawing.Point(118, 65);
+            this.drw.Location = new System.Drawing.Point(109, 65);
             this.drw.Name = "drw";
-            this.drw.Size = new System.Drawing.Size(147, 29);
+            this.drw.Size = new System.Drawing.Size(147, 36);
             this.drw.TabIndex = 14;
             this.drw.Text = "Draws:";
             // 
@@ -190,9 +190,9 @@
             this.laby.BackColor = System.Drawing.Color.Transparent;
             this.laby.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.laby.ForeColor = System.Drawing.Color.Snow;
-            this.laby.Location = new System.Drawing.Point(199, 22);
+            this.laby.Location = new System.Drawing.Point(184, 22);
             this.laby.Name = "laby";
-            this.laby.Size = new System.Drawing.Size(140, 56);
+            this.laby.Size = new System.Drawing.Size(157, 43);
             this.laby.TabIndex = 13;
             this.laby.Text = "Y Wins:";
             // 
@@ -201,7 +201,7 @@
             this.labx.BackColor = System.Drawing.Color.Transparent;
             this.labx.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labx.ForeColor = System.Drawing.Color.Snow;
-            this.labx.Location = new System.Drawing.Point(35, 22);
+            this.labx.Location = new System.Drawing.Point(39, 22);
             this.labx.Name = "labx";
             this.labx.Size = new System.Drawing.Size(158, 56);
             this.labx.TabIndex = 12;
