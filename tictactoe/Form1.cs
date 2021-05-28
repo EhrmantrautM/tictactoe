@@ -16,28 +16,33 @@ namespace tictactoe
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             InitializeComponent();
         }
-        private int player = 2;
-        private int turns = 0;
-    
-        private void labx_Click(object sender, EventArgs e)
-        {
+        public int player = 2;
+        public int turns = 0;
+        public int s1 = 0;
+        public int s2 = 0;
 
-        }
-
-        private void button_click(object sender, EventArgs e)
+        private void buttonClick(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            if (player % 2 == 0);
-        }
+            if (player % 2 == 0)
+            {
+                button.Text = "X";
+                player++;
+                turns++;
+            }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
+            else
+            {
+                button.Text = "O";
+                player++;
+                turns++;
+            }
+              
+            }
         }
-    }
-}
+   }
