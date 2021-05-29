@@ -39,25 +39,24 @@ namespace tictactoe
                     player++;
                     move++;
                 }
-            {
+                { 
                 if (drawgame() == true)
                 {
-
                     MessageBox.Show("Draw");
-                    draw++;
+                    DRAWcnt.Text = (Int16.Parse(DRAWcnt.Text) + 1).ToString();
                     Restart();
                 }
                 if (Wingame() == true)
                 {
                     if (button.Text == "O")
                     {
-                        MessageBox.Show("O WON");
-                        ywin++;
-                        Restart();
+                    MessageBox.Show("O WON");
+                    OWINcnt.Text = (Int16.Parse(OWINcnt.Text) + 1).ToString();
+                    Restart();
                     }
                     else
-                        MessageBox.Show("X WON");
-                    xwin++;
+                    MessageBox.Show("X WON");
+                    XWINcnt.Text = (Int16.Parse(XWINcnt.Text) + 1).ToString();
                     Restart();
                 }
             }
@@ -67,10 +66,7 @@ namespace tictactoe
             this.Close();
         }
         private void Form1_Load(object sender, EventArgs e)
-        {
-            labx.Text = "X Wins: " + xwin;
-            laby.Text = "Y Wins:" + ywin;
-            drw.Text = "Draw:" + draw;
+        {    
         }
         void Restart()
         {

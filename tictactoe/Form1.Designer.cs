@@ -39,10 +39,13 @@
             this.btnnew = new System.Windows.Forms.Button();
             this.btna2 = new System.Windows.Forms.Button();
             this.btna1 = new System.Windows.Forms.Button();
-            this.drw = new System.Windows.Forms.Label();
             this.btnex = new System.Windows.Forms.Button();
-            this.laby = new System.Windows.Forms.Label();
-            this.labx = new System.Windows.Forms.Label();
+            this.xx = new System.Windows.Forms.Label();
+            this.oo = new System.Windows.Forms.Label();
+            this.drawC = new System.Windows.Forms.Label();
+            this.XWINcnt = new System.Windows.Forms.Label();
+            this.OWINcnt = new System.Windows.Forms.Label();
+            this.DRAWcnt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnc1
@@ -159,17 +162,6 @@
             this.btna1.UseVisualStyleBackColor = false;
             this.btna1.Click += new System.EventHandler(this.buttonClick);
             // 
-            // drw
-            // 
-            this.drw.BackColor = System.Drawing.Color.Transparent;
-            this.drw.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drw.ForeColor = System.Drawing.Color.Snow;
-            this.drw.Location = new System.Drawing.Point(109, 65);
-            this.drw.Name = "drw";
-            this.drw.Size = new System.Drawing.Size(147, 36);
-            this.drw.TabIndex = 14;
-            this.drw.Text = "Draws:";
-            // 
             // btnex
             // 
             this.btnex.BackColor = System.Drawing.Color.Transparent;
@@ -185,27 +177,69 @@
             this.btnex.UseVisualStyleBackColor = false;
             this.btnex.Click += new System.EventHandler(this.btnex_Click);
             // 
-            // laby
+            // xx
             // 
-            this.laby.BackColor = System.Drawing.Color.Transparent;
-            this.laby.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.laby.ForeColor = System.Drawing.Color.Snow;
-            this.laby.Location = new System.Drawing.Point(184, 22);
-            this.laby.Name = "laby";
-            this.laby.Size = new System.Drawing.Size(157, 43);
-            this.laby.TabIndex = 13;
-            this.laby.Text = "Y Wins:";
+            this.xx.AutoSize = true;
+            this.xx.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.xx.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xx.Location = new System.Drawing.Point(20, 27);
+            this.xx.Name = "xx";
+            this.xx.Size = new System.Drawing.Size(107, 31);
+            this.xx.TabIndex = 16;
+            this.xx.Text = "X Wins:";
             // 
-            // labx
+            // oo
             // 
-            this.labx.BackColor = System.Drawing.Color.Transparent;
-            this.labx.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labx.ForeColor = System.Drawing.Color.Snow;
-            this.labx.Location = new System.Drawing.Point(39, 22);
-            this.labx.Name = "labx";
-            this.labx.Size = new System.Drawing.Size(158, 56);
-            this.labx.TabIndex = 12;
-            this.labx.Text = "X Wins:";
+            this.oo.AutoSize = true;
+            this.oo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.oo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oo.Location = new System.Drawing.Point(167, 27);
+            this.oo.Name = "oo";
+            this.oo.Size = new System.Drawing.Size(110, 31);
+            this.oo.TabIndex = 18;
+            this.oo.Text = "O Wins:";
+            // 
+            // drawC
+            // 
+            this.drawC.AutoSize = true;
+            this.drawC.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.drawC.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawC.Location = new System.Drawing.Point(116, 69);
+            this.drawC.Name = "drawC";
+            this.drawC.Size = new System.Drawing.Size(86, 31);
+            this.drawC.TabIndex = 22;
+            this.drawC.Text = "Draw:";
+            // 
+            // XWINcnt
+            // 
+            this.XWINcnt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.XWINcnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XWINcnt.Location = new System.Drawing.Point(119, 27);
+            this.XWINcnt.Name = "XWINcnt";
+            this.XWINcnt.Size = new System.Drawing.Size(29, 31);
+            this.XWINcnt.TabIndex = 23;
+            this.XWINcnt.Text = "0";
+            // 
+            // OWINcnt
+            // 
+            this.OWINcnt.AutoSize = true;
+            this.OWINcnt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.OWINcnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OWINcnt.Location = new System.Drawing.Point(272, 27);
+            this.OWINcnt.Name = "OWINcnt";
+            this.OWINcnt.Size = new System.Drawing.Size(29, 31);
+            this.OWINcnt.TabIndex = 24;
+            this.OWINcnt.Text = "0";
+            // 
+            // DRAWcnt
+            // 
+            this.DRAWcnt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DRAWcnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DRAWcnt.Location = new System.Drawing.Point(198, 69);
+            this.DRAWcnt.Name = "DRAWcnt";
+            this.DRAWcnt.Size = new System.Drawing.Size(34, 31);
+            this.DRAWcnt.TabIndex = 25;
+            this.DRAWcnt.Text = "0";
             // 
             // TicTacToe
             // 
@@ -216,10 +250,13 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(336, 443);
+            this.Controls.Add(this.DRAWcnt);
+            this.Controls.Add(this.OWINcnt);
+            this.Controls.Add(this.XWINcnt);
+            this.Controls.Add(this.drawC);
+            this.Controls.Add(this.oo);
+            this.Controls.Add(this.xx);
             this.Controls.Add(this.btnex);
-            this.Controls.Add(this.drw);
-            this.Controls.Add(this.laby);
-            this.Controls.Add(this.labx);
             this.Controls.Add(this.btna1);
             this.Controls.Add(this.btnnew);
             this.Controls.Add(this.btnc3);
@@ -239,6 +276,7 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -253,10 +291,13 @@
         private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.Button btna2;
         private System.Windows.Forms.Button btna1;
-        private System.Windows.Forms.Label drw;
         private System.Windows.Forms.Button btnex;
-        private System.Windows.Forms.Label laby;
-        private System.Windows.Forms.Label labx;
+        private System.Windows.Forms.Label xx;
+        private System.Windows.Forms.Label oo;
+        private System.Windows.Forms.Label drawC;
+        private System.Windows.Forms.Label XWINcnt;
+        private System.Windows.Forms.Label OWINcnt;
+        private System.Windows.Forms.Label DRAWcnt;
     }
 }
 
