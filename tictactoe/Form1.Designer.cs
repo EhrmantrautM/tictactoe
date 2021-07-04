@@ -219,7 +219,7 @@
             this.XWINcnt.Size = new System.Drawing.Size(29, 31);
             this.XWINcnt.TabIndex = 23;
             this.XWINcnt.Text = "0";
-            // 
+   // 
             // OWINcnt
             // 
             this.OWINcnt.AutoSize = true;
@@ -274,7 +274,6 @@
             this.Name = "TicTacToe";
             this.Text = "TicTacToe";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -20,7 +20,7 @@ namespace tictactoe
         public int player = 2;
         public int move = 0;
         public int xwin = 0;
-        public int ywin = 0;
+        public int owin = 0;
         public int draw = 0;
 
         private void buttonClick(object sender, EventArgs e)
@@ -39,25 +39,27 @@ namespace tictactoe
                     player++;
                     move++;
                 }
-                { 
+                {
                 if (drawgame() == true)
                 {
                     MessageBox.Show("Draw");
-                    DRAWcnt.Text = (Int16.Parse(DRAWcnt.Text) + 1).ToString();
+                    DRAWcnt.Text = (Byte.Parse(DRAWcnt.Text) + 1).ToString();
                     Restart();
                 }
                 if (Wingame() == true)
                 {
                     if (button.Text == "O")
                     {
-                    MessageBox.Show("O WON");
-                    OWINcnt.Text = (Int16.Parse(OWINcnt.Text) + 1).ToString();
-                    Restart();
+                        MessageBox.Show("O WON");
+                        OWINcnt.Text = (Byte.Parse(OWINcnt.Text) + 1).ToString();
+                        Restart();
                     }
                     else
-                    MessageBox.Show("X WON");
-                    XWINcnt.Text = (Int16.Parse(XWINcnt.Text) + 1).ToString();
-                    Restart();
+                    {
+                        MessageBox.Show("X WON");
+                        XWINcnt.Text = (Byte.Parse(XWINcnt.Text) + 1).ToString();
+                        Restart();
+                    }
                 }
             }
         }
@@ -65,10 +67,7 @@ namespace tictactoe
         {
             this.Close();
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {    
-        }
-        void Restart()
+        public void Restart()
         {
             player = 2;
             move = 0;
@@ -108,6 +107,7 @@ namespace tictactoe
                 return true;
             else
                 return false;
+        
         }
     }
 }
