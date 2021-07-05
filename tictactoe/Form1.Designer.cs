@@ -46,13 +46,15 @@
             this.XWINcnt = new System.Windows.Forms.Label();
             this.OWINcnt = new System.Windows.Forms.Label();
             this.DRAWcnt = new System.Windows.Forms.Label();
+            this.btnreset = new System.Windows.Forms.Button();
+            this.btnhelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnc1
             // 
-            this.btnc1.BackColor = System.Drawing.Color.Transparent;
+            this.btnc1.BackColor = System.Drawing.Color.BurlyWood;
             this.btnc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnc1.Location = new System.Drawing.Point(26, 295);
+            this.btnc1.Location = new System.Drawing.Point(26, 288);
             this.btnc1.Name = "btnc1";
             this.btnc1.Size = new System.Drawing.Size(92, 84);
             this.btnc1.TabIndex = 1;
@@ -61,9 +63,9 @@
             // 
             // btnb1
             // 
-            this.btnb1.BackColor = System.Drawing.Color.Transparent;
+            this.btnb1.BackColor = System.Drawing.Color.BurlyWood;
             this.btnb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnb1.Location = new System.Drawing.Point(26, 205);
+            this.btnb1.Location = new System.Drawing.Point(26, 195);
             this.btnb1.Name = "btnb1";
             this.btnb1.Size = new System.Drawing.Size(92, 84);
             this.btnb1.TabIndex = 2;
@@ -72,9 +74,10 @@
             // 
             // btnc2
             // 
-            this.btnc2.BackColor = System.Drawing.Color.Transparent;
+            this.btnc2.BackColor = System.Drawing.Color.BurlyWood;
             this.btnc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnc2.Location = new System.Drawing.Point(124, 295);
+            this.btnc2.ForeColor = System.Drawing.Color.Black;
+            this.btnc2.Location = new System.Drawing.Point(122, 288);
             this.btnc2.Name = "btnc2";
             this.btnc2.Size = new System.Drawing.Size(92, 84);
             this.btnc2.TabIndex = 3;
@@ -83,9 +86,10 @@
             // 
             // btnb2
             // 
-            this.btnb2.BackColor = System.Drawing.Color.Transparent;
+            this.btnb2.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnb2.Cursor = System.Windows.Forms.Cursors.NoMove2D;
             this.btnb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnb2.Location = new System.Drawing.Point(124, 205);
+            this.btnb2.Location = new System.Drawing.Point(125, 195);
             this.btnb2.Name = "btnb2";
             this.btnb2.Size = new System.Drawing.Size(92, 84);
             this.btnb2.TabIndex = 4;
@@ -94,9 +98,9 @@
             // 
             // btna3
             // 
-            this.btna3.BackColor = System.Drawing.Color.Transparent;
+            this.btna3.BackColor = System.Drawing.Color.BurlyWood;
             this.btna3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btna3.Location = new System.Drawing.Point(222, 115);
+            this.btna3.Location = new System.Drawing.Point(222, 105);
             this.btna3.Name = "btna3";
             this.btna3.Size = new System.Drawing.Size(92, 84);
             this.btna3.TabIndex = 6;
@@ -105,9 +109,9 @@
             // 
             // btnb3
             // 
-            this.btnb3.BackColor = System.Drawing.Color.Transparent;
+            this.btnb3.BackColor = System.Drawing.Color.BurlyWood;
             this.btnb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnb3.Location = new System.Drawing.Point(222, 205);
+            this.btnb3.Location = new System.Drawing.Point(222, 195);
             this.btnb3.Name = "btnb3";
             this.btnb3.Size = new System.Drawing.Size(92, 84);
             this.btnb3.TabIndex = 7;
@@ -116,9 +120,9 @@
             // 
             // btnc3
             // 
-            this.btnc3.BackColor = System.Drawing.Color.Transparent;
+            this.btnc3.BackColor = System.Drawing.Color.BurlyWood;
             this.btnc3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnc3.Location = new System.Drawing.Point(222, 295);
+            this.btnc3.Location = new System.Drawing.Point(222, 288);
             this.btnc3.Name = "btnc3";
             this.btnc3.Size = new System.Drawing.Size(92, 84);
             this.btnc3.TabIndex = 8;
@@ -127,24 +131,24 @@
             // 
             // btnnew
             // 
-            this.btnnew.BackColor = System.Drawing.Color.Transparent;
+            this.btnnew.BackColor = System.Drawing.Color.Linen;
             this.btnnew.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnnew.FlatAppearance.BorderSize = 5;
-            this.btnnew.Font = new System.Drawing.Font("Bell MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnew.Font = new System.Drawing.Font("Bell MT", 15F);
             this.btnnew.ForeColor = System.Drawing.Color.Black;
-            this.btnnew.Location = new System.Drawing.Point(26, 391);
+            this.btnnew.Location = new System.Drawing.Point(26, 390);
             this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(141, 41);
+            this.btnnew.Size = new System.Drawing.Size(92, 41);
             this.btnnew.TabIndex = 9;
-            this.btnnew.Text = "NEW GAME";
+            this.btnnew.Text = "NEW ";
             this.btnnew.UseVisualStyleBackColor = false;
             this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // btna2
             // 
-            this.btna2.BackColor = System.Drawing.Color.Transparent;
+            this.btna2.BackColor = System.Drawing.Color.BurlyWood;
             this.btna2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btna2.Location = new System.Drawing.Point(124, 115);
+            this.btna2.Location = new System.Drawing.Point(124, 105);
             this.btna2.Name = "btna2";
             this.btna2.Size = new System.Drawing.Size(92, 84);
             this.btna2.TabIndex = 5;
@@ -153,9 +157,9 @@
             // 
             // btna1
             // 
-            this.btna1.BackColor = System.Drawing.Color.Transparent;
+            this.btna1.BackColor = System.Drawing.Color.BurlyWood;
             this.btna1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btna1.Location = new System.Drawing.Point(26, 115);
+            this.btna1.Location = new System.Drawing.Point(26, 105);
             this.btna1.Name = "btna1";
             this.btna1.Size = new System.Drawing.Size(92, 84);
             this.btna1.TabIndex = 10;
@@ -164,14 +168,14 @@
             // 
             // btnex
             // 
-            this.btnex.BackColor = System.Drawing.Color.Transparent;
+            this.btnex.BackColor = System.Drawing.Color.Snow;
             this.btnex.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnex.FlatAppearance.BorderSize = 5;
-            this.btnex.Font = new System.Drawing.Font("Bell MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnex.Font = new System.Drawing.Font("Bell MT", 15F);
             this.btnex.ForeColor = System.Drawing.Color.Black;
-            this.btnex.Location = new System.Drawing.Point(173, 390);
+            this.btnex.Location = new System.Drawing.Point(220, 390);
             this.btnex.Name = "btnex";
-            this.btnex.Size = new System.Drawing.Size(141, 41);
+            this.btnex.Size = new System.Drawing.Size(92, 41);
             this.btnex.TabIndex = 15;
             this.btnex.Text = "EXIT";
             this.btnex.UseVisualStyleBackColor = false;
@@ -180,52 +184,52 @@
             // xx
             // 
             this.xx.AutoSize = true;
-            this.xx.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.xx.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xx.Location = new System.Drawing.Point(20, 27);
+            this.xx.BackColor = System.Drawing.Color.Wheat;
+            this.xx.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xx.Location = new System.Drawing.Point(20, 11);
             this.xx.Name = "xx";
-            this.xx.Size = new System.Drawing.Size(107, 31);
+            this.xx.Size = new System.Drawing.Size(101, 31);
             this.xx.TabIndex = 16;
             this.xx.Text = "X Wins:";
             // 
             // oo
             // 
             this.oo.AutoSize = true;
-            this.oo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.oo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oo.Location = new System.Drawing.Point(167, 27);
+            this.oo.BackColor = System.Drawing.Color.Wheat;
+            this.oo.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oo.Location = new System.Drawing.Point(167, 12);
             this.oo.Name = "oo";
-            this.oo.Size = new System.Drawing.Size(110, 31);
+            this.oo.Size = new System.Drawing.Size(101, 31);
             this.oo.TabIndex = 18;
             this.oo.Text = "O Wins:";
             // 
             // drawC
             // 
             this.drawC.AutoSize = true;
-            this.drawC.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.drawC.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drawC.Location = new System.Drawing.Point(116, 69);
+            this.drawC.BackColor = System.Drawing.Color.Wheat;
+            this.drawC.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawC.Location = new System.Drawing.Point(116, 56);
             this.drawC.Name = "drawC";
-            this.drawC.Size = new System.Drawing.Size(86, 31);
+            this.drawC.Size = new System.Drawing.Size(79, 31);
             this.drawC.TabIndex = 22;
             this.drawC.Text = "Draw:";
             // 
             // XWINcnt
             // 
-            this.XWINcnt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.XWINcnt.BackColor = System.Drawing.Color.Linen;
             this.XWINcnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XWINcnt.Location = new System.Drawing.Point(119, 27);
+            this.XWINcnt.Location = new System.Drawing.Point(119, 11);
             this.XWINcnt.Name = "XWINcnt";
             this.XWINcnt.Size = new System.Drawing.Size(29, 31);
             this.XWINcnt.TabIndex = 23;
             this.XWINcnt.Text = "0";
-   // 
+            // 
             // OWINcnt
             // 
             this.OWINcnt.AutoSize = true;
-            this.OWINcnt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.OWINcnt.BackColor = System.Drawing.Color.Linen;
             this.OWINcnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OWINcnt.Location = new System.Drawing.Point(272, 27);
+            this.OWINcnt.Location = new System.Drawing.Point(268, 12);
             this.OWINcnt.Name = "OWINcnt";
             this.OWINcnt.Size = new System.Drawing.Size(29, 31);
             this.OWINcnt.TabIndex = 24;
@@ -233,13 +237,40 @@
             // 
             // DRAWcnt
             // 
-            this.DRAWcnt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DRAWcnt.BackColor = System.Drawing.Color.Linen;
             this.DRAWcnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DRAWcnt.Location = new System.Drawing.Point(198, 69);
+            this.DRAWcnt.Location = new System.Drawing.Point(195, 56);
             this.DRAWcnt.Name = "DRAWcnt";
-            this.DRAWcnt.Size = new System.Drawing.Size(34, 31);
+            this.DRAWcnt.Size = new System.Drawing.Size(30, 31);
             this.DRAWcnt.TabIndex = 25;
             this.DRAWcnt.Text = "0";
+            // 
+            // btnreset
+            // 
+            this.btnreset.BackColor = System.Drawing.Color.Snow;
+            this.btnreset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnreset.FlatAppearance.BorderSize = 5;
+            this.btnreset.Font = new System.Drawing.Font("Bell MT", 15F);
+            this.btnreset.ForeColor = System.Drawing.Color.Black;
+            this.btnreset.Location = new System.Drawing.Point(122, 390);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(92, 41);
+            this.btnreset.TabIndex = 26;
+            this.btnreset.Text = "RESET";
+            this.btnreset.UseVisualStyleBackColor = false;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
+            // 
+            // btnhelp
+            // 
+            this.btnhelp.BackColor = System.Drawing.Color.Wheat;
+            this.btnhelp.Font = new System.Drawing.Font("Noto Sans", 8F, System.Drawing.FontStyle.Bold);
+            this.btnhelp.Location = new System.Drawing.Point(312, 0);
+            this.btnhelp.Name = "btnhelp";
+            this.btnhelp.Size = new System.Drawing.Size(25, 21);
+            this.btnhelp.TabIndex = 27;
+            this.btnhelp.Text = "?";
+            this.btnhelp.UseVisualStyleBackColor = false;
+            this.btnhelp.Click += new System.EventHandler(this.btnhelp_Click);
             // 
             // TicTacToe
             // 
@@ -250,6 +281,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(336, 443);
+            this.Controls.Add(this.btnhelp);
+            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.DRAWcnt);
             this.Controls.Add(this.OWINcnt);
             this.Controls.Add(this.XWINcnt);
@@ -267,11 +300,13 @@
             this.Controls.Add(this.btnc2);
             this.Controls.Add(this.btnb1);
             this.Controls.Add(this.btnc1);
+            this.Cursor = System.Windows.Forms.Cursors.NoMove2D;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.MaximizeBox = false;
             this.Name = "TicTacToe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicTacToe";
             this.TopMost = true;
             this.ResumeLayout(false);
@@ -297,6 +332,8 @@
         private System.Windows.Forms.Label XWINcnt;
         private System.Windows.Forms.Label OWINcnt;
         private System.Windows.Forms.Label DRAWcnt;
+        private System.Windows.Forms.Button btnreset;
+        private System.Windows.Forms.Button btnhelp;
     }
 }
 
