@@ -54,8 +54,8 @@ namespace tictactoe
                  MessageBox.Show("X WON");
                  XWINcnt.Text = (Byte.Parse(XWINcnt.Text) + 1).ToString();
                  Restart();
-                    }
-                }
+                 }
+               }
             }
         }
         private void btnex_Click(object sender, EventArgs e)
